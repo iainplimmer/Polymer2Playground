@@ -3,12 +3,14 @@
   <head>
     <script src="https://polygit.org/webcomponentsjs+1.0.0-rc.5/components/webcomponentsjs/webcomponents-loader.js"></script>
     <link rel="import" href="components/header-element.html">
+    <link rel="import" href="components/footer-element.html">
+    <link rel="import" href="components/attribute-element.html">
   </head>
   <body>
-    <h1>Creating some custom DOM elements in Polymer</h1>
-    <p>This will prove that the CSS is scoped.</p>
     <header-element></header-element>
-
+    <p>This is some text, the fact that the class has no styles means the styles in the components are scoped.</p>    
+    <attribute-element name="My name is Michael Caine."></attribute-element>
+    <footer-element></footer-element>
     
   </body>
 </html>

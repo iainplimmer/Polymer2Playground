@@ -3,20 +3,31 @@
 <dom-module id="header-element">
 
   <template>
+    
     <!-- scoped CSS for this element -->
     <style>
-      p {
+      h1 {
         color: red;  
       }
     </style>
-    <p>Welcome to the Polymer Playground.</p>
+
+    <!-- Add some data binding -->
+    <h1>{{Title}}</h1>
   </template>
 
   <script>
-    class DomElement extends Polymer.Element {
-      static get is() { return "header-element"; }
+    class HeaderElement extends Polymer.Element {
+        
+        static get is() { 
+            return "header-element"; 
+        }
+
+        constructor() {
+            super();
+            this.Title = "Creating some custom elements with Polymer 2.0";
+        }
     }
-    customElements.define(DomElement.is, DomElement);
+    customElements.define(HeaderElement.is, HeaderElement);
   </script>
 
 </dom-module>

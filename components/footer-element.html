@@ -1,0 +1,22 @@
+<link rel="import"  href="https://polygit.org/polymer+2.0.0-rc.2/components/polymer/polymer-element.html">
+
+<dom-module id="footer-element">
+
+  <template>
+    <!-- scoped CSS for this element -->
+    <style>
+      p {
+        color: blue;  
+      }
+    </style>
+    <p>This is the end.</p>
+  </template>
+
+  <script>
+    class FooterElement extends Polymer.Element {
+      static get is() { return "footer-element"; }
+    }
+    customElements.define(FooterElement.is, FooterElement);
+  </script>
+
+</dom-module>
