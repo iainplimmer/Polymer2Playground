@@ -1,0 +1,22 @@
+{
+  "name": "polymerstuff",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iainplimmer/Polymer2Playground.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iainplimmer/Polymer2Playground/issues"
+  },
+  "homepage": "https://github.com/iainplimmer/Polymer2Playground#readme",
+  "devDependencies": {
+    "lite-server": "^2.3.0"
+  }
+}
