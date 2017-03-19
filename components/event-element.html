@@ -16,12 +16,12 @@
 
         constructor() {
             super();     
-            this.addEventListener('click', e => this.HandleClick(e));
+            //  We can target an element by name using $ and attach the event to it
+            this.$.btn.addEventListener('click', e => { this.HandleClick(e)} );
         }
 
         HandleClick() {
             this.message = 'Event listener event has happened, baby!';
-            console.log(this.message)
         }
 
         ready() {
