@@ -1,0 +1,37 @@
+<link rel="import"  href="https://polygit.org/polymer+2.0.0-rc.2/components/polymer/polymer-element.html">
+
+<dom-module id="event-element">
+
+  <template>
+    <br/>
+    <button id="btn">My Button</button> {{message}}
+  </template>
+
+  <script>
+    class EventElement extends Polymer.Element {
+        
+        static get is() { 
+            return "event-element"; 
+        }
+
+        constructor() {
+            super();     
+            this.addEventListener('click', e => this.HandleClick(e));
+        }
+
+        HandleClick() {
+            this.message = 'Event listener event has happened, baby!';
+            console.log(this.message)
+        }
+
+        ready() {
+            super.ready();
+            console.log('event-element is ready!');
+            
+        }
+
+    }
+    customElements.define(EventElement.is, EventElement);
+  </script>
+
+</dom-module>
