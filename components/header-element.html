@@ -1,14 +1,20 @@
 <link rel="import"  href="https://polygit.org/polymer+2.0.0-rc.2/components/polymer/polymer-element.html">
 
-<dom-module id="dom-element">
+<dom-module id="header-element">
 
   <template>
-    <p>This is the local DOM for this element.</p>
+    <!-- scoped CSS for this element -->
+    <style>
+      p {
+        color: red;  
+      }
+    </style>
+    <p>Welcome to the Polymer Playground.</p>
   </template>
 
   <script>
     class DomElement extends Polymer.Element {
-      static get is() { return "dom-element"; }
+      static get is() { return "header-element"; }
     }
     customElements.define(DomElement.is, DomElement);
   </script>
