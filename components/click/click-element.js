@@ -1,21 +1,5 @@
-<link rel="import"  href="https://polygit.org/polymer+2.0.0-rc.2/components/polymer/polymer-element.html">
+(function (customElements) {
 
-<dom-module id="click-element">
-
-  <template>
-    
-    <!-- scoped CSS for this element -->
-    <style>
-      h1 {
-        color: green;  
-      }
-    </style>
-
-    <!-- This data comes from the attribute being passed to the element -->
-    <a href="#" on-click="HandleClick">Click me!</a> {{message}}
-  </template>
-
-  <script>
     class ClickElement extends Polymer.Element {
         
         static get is() { 
@@ -39,6 +23,5 @@
 
     }
     customElements.define(ClickElement.is, ClickElement);
-  </script>
 
-</dom-module>
+})(customElements);

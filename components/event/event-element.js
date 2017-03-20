@@ -1,13 +1,5 @@
-<link rel="import"  href="https://polygit.org/polymer+2.0.0-rc.2/components/polymer/polymer-element.html">
+(function (customElements) {
 
-<dom-module id="event-element">
-
-  <template>
-    <br/>
-    <button id="btn">My Button</button> {{message}}
-  </template>
-
-  <script>
     class EventElement extends Polymer.Element {
         
         static get is() { 
@@ -32,6 +24,5 @@
 
     }
     customElements.define(EventElement.is, EventElement);
-  </script>
 
-</dom-module>
+})(customElements);

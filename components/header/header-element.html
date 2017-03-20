@@ -15,19 +15,6 @@
     <h1>{{Title}}</h1>
   </template>
 
-  <script>
-    class HeaderElement extends Polymer.Element {
-        
-        static get is() { 
-            return "header-element"; 
-        }
-
-        constructor() {
-            super();
-            this.Title = "Creating some custom elements with Polymer 2.0";
-        }
-    }
-    customElements.define(HeaderElement.is, HeaderElement);
-  </script>
+  <script src="./header-element.js"></script>
 
 </dom-module>
