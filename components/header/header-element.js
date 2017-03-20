@@ -1,6 +1,6 @@
 (function (customElements) {
 
-class HeaderElement extends Polymer.Element {
+    class HeaderElement extends Polymer.Element {
         
         static get is() { 
             return "header-element"; 
